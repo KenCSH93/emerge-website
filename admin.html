@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard - Unity Collective</title>
+
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <main class="container">
+    <h1>ADMIN DASHBOARD</h1>
+    <p class="subtitle">Add, edit, and delete student and project details.</p>
+
+    <div class="admin-tabs">
+      <button class="admin-tab active" data-tab="studentsTab">
+        Manage Students
+      </button>
+
+      <button class="admin-tab" data-tab="projectsTab">
+        Manage Projects
+      </button>
+    </div>
+
+    <section id="studentsTab" class="admin-tab-content active">
+      <h2 class="admin-heading">Manage Students</h2>
+
+      <form id="studentForm" class="admin-form">
+        <input type="hidden" id="studentId" />
+
+        <label>Name</label>
+        <input type="text" id="studentNameInput" required />
+
+        <label>Programme</label>
+        <input type="text" id="studentProgramInput" required />
+
+        <label>Semester</label>
+        <input type="text" id="studentSemesterInput" placeholder="Semester 1, 2024" />
+
+        <label>Email</label>
+        <input type="email" id="studentEmailInput" />
+
+        <label>Phone</label>
+        <input type="text" id="studentPhoneInput" />
+
+        <label>LinkedIn</label>
+        <input type="text" id="studentLinkedinInput" />
+
+        <label>Image Path</label>
+        <input type="text" id="studentImageInput" placeholder="assets/images/students/laura.jpg" />
+
+        <label>About</label>
+        <textarea id="studentAboutInput" rows="5"></textarea>
+
+        <button type="submit" class="btn-secondary">Save Student</button>
+        <button type="button" id="clearForm" class="btn-secondary">
+          Clear Student Form
+        </button>
+      </form>
+
+      <h2 class="admin-heading">Students List</h2>
+
+      <div class="search-box projects-search">
+        <input type="text" id="adminStudentSearch" placeholder="Search Student Name" />
+      </div>
+
+      <div class="admin-list-container">
+        <div id="adminStudentsList"></div>
+      </div>
+    </section>
+
+    <section id="projectsTab" class="admin-tab-content">
+      <h2 class="admin-heading">Manage Projects</h2>
+
+      <form id="projectForm" class="admin-form">
+        <input type="hidden" id="projectId" />
+
+        <label>Project Title</label>
+        <input type="text" id="projectTitle" required />
+
+        <label>Student Name</label>
+        <input type="text" id="projectStudent" required />
+
+        <label>Date / Semester</label>
+        <input type="text" id="projectDate" placeholder="Semester 1, 2024" required />
+
+        <label>Category</label>
+        <input type="text" id="projectCategory" placeholder="Short Paper" required />
+
+        <label>Programme</label>
+        <input type="text" id="projectProgramme" required />
+
+        <label>Overview</label>
+        <textarea id="projectOverview" rows="5"></textarea>
+
+        <label>PDF Path</label>
+        <input type="text" id="projectDocument" placeholder="assets/images/file/Short Paper.pdf" />
+
+        <label>Tags</label>
+        <input type="text" id="projectTags" placeholder="Agile, Networking, AI" />
+
+        <label>Image Paths</label>
+        <input type="text" id="projectImages"
+          placeholder="assets/images/project-pages/page1.png, assets/images/project-pages/page2.png" />
+
+        <button type="submit" class="btn-secondary">Save Project</button>
+        <button type="button" id="clearProjectForm" class="btn-secondary">
+          Clear Project Form
+        </button>
+      </form>
+
+      <h2 class="admin-heading">Projects List</h2>
+
+      <div class="search-box projects-search">
+        <input type="text" id="adminProjectSearch" placeholder="Search Project Name" />
+      </div>
+
+      <div class="admin-list-container">
+        <div id="projectAdminList"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/data/students.js"></script>
+  <script src="js/data/student-storage.js"></script>
+
+  <script src="js/data/projects.js"></script>
+  <script src="js/data/project-storage.js"></script>
+
+  <script src="js/header-footer.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+
+</html>

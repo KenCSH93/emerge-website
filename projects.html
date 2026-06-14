@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Unity Collective</title>
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <main class="container">
+    <h1>PROJECTS</h1>
+
+    <p class="subtitle">
+      Browse and explore past Emerge projects.
+    </p>
+
+    <div class="search-box projects-search">
+      <input type="text" id="projectSearchInput" placeholder="Search Project Name or Project Tag" />
+    </div>
+
+    <div class="filter-bar">
+      <select id="categoryFilter" class="filter-select">
+        <option value="">All Categories</option>
+      </select>
+
+      <select id="programmeFilter" class="filter-select">
+        <option value="">All Programmes</option>
+      </select>
+
+      <select id="semesterFilter" class="filter-select">
+        <option value="">All Semesters</option>
+      </select>
+
+      <select id="tagFilter" class="filter-select">
+        <option value="">All Tags</option>
+      </select>
+
+      <button id="resetProjectFilters" class="btn-secondary">Reset</button>
+    </div>
+
+    <div class="results-bar">
+      <p id="projectsCount">Showing projects</p>
+    </div>
+
+    <section class="grid-4" id="projectsGrid"></section>
+
+    <div class="pagination" id="pagination"></div>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/data/projects.js"></script>
+  <script src="js/data/project-storage.js"></script>
+  <script src="js/header-footer.js"></script>
+  <script src="js/pages/projects.js"></script>
+</body>
+
+</html>

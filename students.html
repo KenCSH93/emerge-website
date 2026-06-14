@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students - Unity Collective</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <main class="container">
+    <h1>STUDENTS</h1>
+    <p class="subtitle">Meet the talented Emerge students and explore their profiles.</p>
+
+    <div class="search-box projects-search">
+      <input type="text" id="studentSearchInput" placeholder="Search Student Name" />
+    </div>
+
+    <div class="filter-bar">
+      <select id="programFilter" class="filter-select">
+        <option value="">All Programmes</option>
+      </select>
+      <select id="semesterFilter" class="filter-select">
+        <option value="">All Semesters</option>
+      </select>
+      <button id="resetFilters" class="btn-secondary">Reset</button>
+    </div>
+
+    <div class="results-bar">
+      <p id="resultsCount">Showing students</p>
+    </div>
+
+    <div class="grid-4" id="studentsGrid"></div>
+
+    <div class="pagination" id="pagination"></div>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/data/students.js"></script>
+  <script src="js/data/student-storage.js"></script>
+  <script src="js/header-footer.js"></script>
+  <script src="js/pages/students.js"></script>
+  <script src="js/data/projects.js"></script>
+</body>
+
+</html>

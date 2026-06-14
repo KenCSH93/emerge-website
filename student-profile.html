@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Profile - Unity Collective</title>
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <main class="container">
+    <a href="students.html" class="back-link">← Back to all students</a>
+
+    <div class="profile-header">
+      <div class="profile-avatar">
+        <img id="studentImage" src="" alt="Student Image" />
+      </div>
+
+      <div class="profile-info">
+        <h1 id="studentName"></h1>
+        <p class="program" id="studentProgram"></p>
+        <p class="program" id="studentSemester"></p>
+        <div class="contact-info" id="contactInfo"></div>
+      </div>
+    </div>
+
+    <div class="profile-section">
+      <h2>ABOUT</h2>
+      <div id="studentAbout">Loading...</div>
+    </div>
+
+    <div class="profile-section">
+      <h2>PROJECTS</h2>
+      <div class="grid-4" id="studentProjects"></div>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/data/students.js"></script>
+  <script src="js/data/student-storage.js"></script>
+  <script src="js/data/projects.js"></script>
+  <script src="js/data/project-storage.js"></script>
+  <script src="js/header-footer.js"></script>
+  <script src="js/pages/student-profile.js"></script>
+</body>
+
+</html>

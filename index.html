@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unity Collective - Home</title>
+
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <main class="container">
+
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>UNITY COLLECTIVE</h1>
+
+        <p class="hero-text">
+          A platform to showcase projects created and designed<br />
+          by Ara students.
+        </p>
+
+        <div class="search-box">
+          <input type="text" placeholder="Search Student Name, Project Name or Project Tag" id="searchInput" />
+
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+
+          <div id="searchResults" class="search-results"></div>
+        </div>
+      </div>
+
+      <div class="hero-image-slider">
+        <img src="assets/images/emerge/emerge1.jpg" class="hero-slide active" alt="Emerge photo 1">
+        <img src="assets/images/emerge/emerge2.jpg" class="hero-slide" alt="Emerge photo 2">
+        <img src="assets/images/emerge/emerge3.jpg" class="hero-slide" alt="Emerge photo 3">
+        <img src="assets/images/emerge/emerge4.jpg" class="hero-slide" alt="Emerge photo 4">
+        <img src="assets/images/emerge/emerge5.jpg" class="hero-slide" alt="Emerge photo 5">
+        <img src="assets/images/emerge/emerge6.jpg" class="hero-slide" alt="Emerge photo 6">
+        <img src="assets/images/emerge/emerge7.jpg" class="hero-slide" alt="Emerge photo 7">
+        <img src="assets/images/emerge/emerge8.jpg" class="hero-slide" alt="Emerge photo 8">
+        <img src="assets/images/emerge/emerge9.jpg" class="hero-slide" alt="Emerge photo 9">
+        <img src="assets/images/emerge/emerge10.jpg" class="hero-slide" alt="Emerge photo 10">
+      </div>
+    </section>
+
+    <section class="video-section">
+      <div class="section-header">
+        <h2>EMERGE SHOWCASE VIDEO</h2>
+      </div>
+
+      <div class="video-container">
+        <video controls>
+          <source src="assets/videos/emerge.mp4" type="video/mp4">
+          Your browser does not support video playback.
+        </video>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <div class="section-header">
+        <h2>FEATURED PROJECTS</h2>
+        <a href="projects.html" class="view-all-link">View all →</a>
+      </div>
+
+      <div class="grid-4" id="featuredProjects"></div>
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/header-footer.js"></script>
+  <script src="js/data/projects.js"></script>
+  <script src="js/data/students.js"></script>
+  <script src="js/pages/home.js"></script>
+</body>
+
+</html>
